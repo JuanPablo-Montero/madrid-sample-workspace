@@ -23,6 +23,7 @@ app.post('/sample/object/action/1', async (req, res) => {
 	const lxcDXPServerProtocol = config['com.liferay.lxc.dxp.server.protocol'] || "http";
 
 	liferayJWT(req,res,async ()=>{
+               console.log(json);//something you could do to start...
 		//WRITE YOUR CODE HERE
 	});
 	res.status(200).send(json);
