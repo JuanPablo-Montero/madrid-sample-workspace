@@ -1,3 +1,6 @@
+# Objective
+Implement a logging mechanism that records any changes made to a User object in Liferay. This mechanism will capture the changed fields and store them in a 'log' object within Liferay. Additionally, it will include the timestamp from an external service located at http://worldtimeapi.org/api/timezone/Asia/Tokyo to ensure accurate timing based on the Tokyo timezone.
+
 # Installation
 Download the workspace and run `gw initBundle`.
 
