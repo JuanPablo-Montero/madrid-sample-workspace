@@ -1,0 +1,18 @@
+assemble:
+    - include:
+          - "**/*"
+liferay-sample-etc-python-oauth-application-user-agent:
+    .serviceAddress: localhost:4001
+    .serviceScheme: http
+    name: Liferay Sample Etc Python OAuth Application User Agent
+    scopes:
+        - Liferay.Headless.Admin.Workflow.everything
+        - c_log.everything
+        - Liferay.Headless.Admin.User.everything
+        - Liferay.Object.Admin.REST.everything
+    type: oAuthApplicationUserAgent
+liferay-sample-etc-python-object-action-1:
+    name: Liferay Sample Python Object Action 1
+    oAuth2ApplicationExternalReferenceCode: liferay-sample-etc-python-oauth-application-user-agent
+    resourcePath: /sample/object/action/1
+    type: objectAction
